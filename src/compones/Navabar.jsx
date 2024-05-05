@@ -33,17 +33,17 @@ const Navbar = () => {
         {
             id: 3,
             name: 'Photo',
-            path: '/',
+            path: 'Photo/',
         },
         {
             id: 4,
             name: 'Service',
-            path: '/',
+            path: 'Service/',
         },
         {
             id: 5,
             name: 'Contact',
-            path: '/',
+            path: 'Contact/',
             cName: 'nav-links'
         },
     ];
