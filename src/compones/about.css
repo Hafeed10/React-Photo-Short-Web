@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+}
+
+.about-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding: 100px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #175ca6;
+    position: relative; /* Added for positioning the ::after pseudo-element */
+}
+
+
+
+
+h1::before,
+h1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #757778;
+    bottom: 0;
+    top: 72px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+h1::before {
+    transform-origin: left;
+}
+
+h1::after {
+    transform-origin: right;
+}
+
+h1:hover::before,
+h1:hover::after {
+    transform: scaleX(1);
+}
+.section-wrapper{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+}
+.section-wrapper img{
+    width: 600px;
+    height: 326px;
+    padding: 10px;
+    border-radius: 16px;
+}
+.left{
+    width: 50%;
+    padding: 10px;
+}
+h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: #757778;
+    padding: 10px;
+}
+.right{
+    width: 50%;
+    padding: 10px;
+} 
+.ppo p{
+    font-size: 15px;
+    line-height: 24px;
+    padding: 10px;
+    color: #505455;
+}

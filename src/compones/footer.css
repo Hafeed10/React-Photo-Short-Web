@@ -1,0 +1,121 @@
+/* footer.css */
+
+@import url("https://fonts.googleapis.com/css?family=IBM%20Plex%20Sans:500|IBM%20Plex%20Sans:300");
+
+:root {
+    --m: 4rem;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.scroll {
+    font-weight: 500;
+    text-align: center;
+    font-size: var(--m);
+    margin: 0;
+}
+
+.hed {
+    font-weight: 500;
+    font-size: calc(0.6 * var(--m));
+    border: none;
+    margin: 0;
+}
+footer {
+    margin-top: 50vh;
+    z-index: 500;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 5rem 2vw;
+    position: relative;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -7;
+}
+
+h5 {
+    color: #919eab;
+}
+
+.backdrop {
+    z-index: -5;
+    position: absolute;
+    inset: 0;
+    background-color:#082545 ;
+}
+
+.col {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: calc(0.3 * var(--m)) calc(0.8 * var(--m));
+    width: 28%;
+    box-shadow: 10px 10px #fff;
+}
+.max1{
+    color: #fff;
+}
+.col2,
+.col3 {
+    padding: 40px;
+    text-align: end;
+    background-color: #d3d5d8;
+    border-radius: calc(0.5 * var(--m));
+}
+
+.col2:hover,
+.col3:hover {
+    background-color: #b5babf;
+    color: #dbdbdb;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 10px 11px #d4d7da;
+}
+
+.social img {
+    height: calc(0.3 * var(--m));
+    object-fit: cover;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.loop1 {
+    animation: loop1 10s linear infinite;
+    animation-play-state: paused;
+    gap: 20px;
+    color: #3f3c3c;
+}
+
+.link {
+    width: calc(0.8 * var(--m));
+    height: calc(0.8 * var(--m));
+    background-color: #384a64;
+    border-radius: calc(0.1 * var(--m));
+    display: flex;
+    color: #175ca6;
+    justify-content: center;
+    align-items: center;
+}
